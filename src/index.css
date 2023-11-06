@@ -22,7 +22,78 @@ input {
   position: relative;
 }
 
-code {
+/* #story {
+  background-color: chartreuse;
+  text-align: left;
+  padding: 0 16px;
+  font-size: 14px;
+  text-decoration: none;
+} */
+
+.Story {
+  font-size: 14px;
+  background-color: rgb(241, 196, 205);
+  padding: 0 16px;
+  min-height: 40px;
+}
+
+
+/* .link-for-title {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+
+.link-for-link {
+  color: gray;
+  font-size: 12px;
+}
+
+.title-for-title {
+  padding-right: 10px;
+}
+
+ */
+
+
+/* .a-body {
+  background-color: aquamarine;
+} */
+
+.an-article {
+  margin: 4px 0 0 4px;
+}
+
+.itletay {
+  color: black;
+  text-decoration: none;
+  padding: 0 8px 0 16px;
+}
+
+.inklay {
+  color: #868686;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.inklay:hover {
+  text-decoration: underline;
+}
+
+.points, .author, .create {
+  font-size: 10px;
+  color: #868686;
+  text-decoration: none;
+  /* padding-left: 20px; */
+}
+
+.points {
+  padding-left: 20px;
+}
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
