@@ -1,6 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import axios from "axios";
+import moment from 'moment';
+import hnewslogo from './hnewslogo.png';
 
 function App() {
 
@@ -26,9 +28,22 @@ function App() {
     <div className="App">
 
       <header>
+          <div className='head-con'>
+            <span className='head-logo'>
+              <img src={hnewslogo}></img>
+              <a className='site-title' href='https://hn.algolia.com/'>Search 
+              <br></br>
+              Hacker News</a>
+
+            </span>
+
+    <div className='search-con'>
         <form>
-          <input onChange={updateArticles} />
+          <input type='search' placeholder='Search stories by title, url, or author' className='search-in' onChange={updateArticles} />
         </form>
+        </div>
+
+        </div>
       </header>
 
 
@@ -74,7 +89,7 @@ function App() {
                 <a className='author' href={article.author}>{article.author} | </a>
               </span>
               <span>
-                <a className='create' href={article.created_at}>{article.created_at}</a>
+                <a className='create' href={article.created_at}>{moment(article.created_at).fromNow()}</a>
               </span>
 
             </div>
