@@ -3,6 +3,9 @@ import { useState, useEffect } from 'react';
 import axios from "axios";
 import moment from 'moment';
 import hnewslogo from './hnewslogo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+
 
 function App() {
 
@@ -24,8 +27,12 @@ function App() {
 
   }, [])
 
+  const filteredArticles = articles.filter(
+    (article) => article.title && article.url
+  );
+
   return (
-    <div className="App">
+    <div className="container">
 
       <header>
           <div className='head-con'>
@@ -39,7 +46,15 @@ function App() {
 
     <div className='search-con'>
         <form>
-          <input type='search' placeholder='Search stories by title, url, or author' className='search-in' onChange={updateArticles} />
+        <div className="search-input">
+                <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" className="search-icon" style={{color: "#ff7429",}} />
+                <input
+                  type="search"
+                  placeholder="Search stories by title, url, or author"
+                  className="search-in"
+                  onChange={updateArticles}
+                />
+              </div>
         </form>
         </div>
 
@@ -47,24 +62,10 @@ function App() {
       </header>
 
 
-      {/* <section class="Story">
-        <div class="post" >
-          <div className="title">
-            {articles.map((article, i) => (
-              <a className="link-for-title" href={article.url} key={i}>
-                <p className="title-for-title">{article.title}</p>
-                <p className="link-for-link">{article.url}</p>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-
 
       <div className='a-body'>
 
-        {articles.map((article, i) => (
+        {filteredArticles.map((article, i) => (
 
           <div className='art-con'>
 

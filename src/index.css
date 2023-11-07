@@ -3,7 +3,30 @@ body {
   font-family: Verdana,Geneva,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+}
+
+.a-body {
   background-color: #f6f6ef;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+      width:calc(85% - 10px);
+      margin: 0 auto
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+      width:100%
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+      width:100%
+  }
 }
 
 header {
@@ -66,6 +89,18 @@ img {
     background-color: #fff;
     color: rgba(0,0,0,.75)
 }
+
+.search-input {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Adjust the left value to your desired position */
+  transform: translateY(-50%);
+}
+
 
 input {
   font-size: 100%;
