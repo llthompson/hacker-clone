@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.8148af29.css",
-    "main.js": "/static/js/main.5b0b06b9.js",
-    "static/js/787.f6a8b0c8.chunk.js": "/static/js/787.f6a8b0c8.chunk.js",
-    "index.html": "/index.html",
-    "main.8148af29.css.map": "/static/css/main.8148af29.css.map",
-    "main.5b0b06b9.js.map": "/static/js/main.5b0b06b9.js.map",
-    "787.f6a8b0c8.chunk.js.map": "/static/js/787.f6a8b0c8.chunk.js.map"
+    "main.css": "/hacker-clone/static/css/main.8148af29.css",
+    "main.js": "/hacker-clone/static/js/main.b2fd6e4e.js",
+    "static/js/787.f6a8b0c8.chunk.js": "/hacker-clone/static/js/787.f6a8b0c8.chunk.js",
+    "index.html": "/hacker-clone/index.html",
+    "main.8148af29.css.map": "/hacker-clone/static/css/main.8148af29.css.map",
+    "main.b2fd6e4e.js.map": "/hacker-clone/static/js/main.b2fd6e4e.js.map",
+    "787.f6a8b0c8.chunk.js.map": "/hacker-clone/static/js/787.f6a8b0c8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8148af29.css",
-    "static/js/main.5b0b06b9.js"
+    "static/js/main.b2fd6e4e.js"
   ]
 }
