@@ -11,14 +11,14 @@ function App() {
 
   const [articles, setArticles] = useState([]);
   const updateArticles = async (e) => {
-    const { data } = await axios.get(`http://hn.algolia.com/api/v1/search?query=${e.target.value}`
+    const { data } = await axios.get(`https://hn.algolia.com/api/v1/search?query=${e.target.value}`
     );
     setArticles(data.hits)
   }
   useEffect(() => {
     async function fetchArticles() {
       console.log('fetching')
-      const { data } = await axios.get(`http://hn.algolia.com/api/v1/search`
+      const { data } = await axios.get(`https://hn.algolia.com/api/v1/search`
       );
       console.log('setting')
       setArticles(data.hits)
